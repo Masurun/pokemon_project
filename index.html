@@ -4,12 +4,27 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width" />
   <title>poke</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="script.js"></script>
+  <link rel="stylesheet" href="./style.css" />
 </head>
 <body>
-  <h1>poke</h1>
-  <button type="button" id="start">スタート</button>
-<img src="" height="300" width="400" id="pokeImg" class="mosaic">
+  <p><button type="button" id="start">スタート</button></p>
+  <p id="pokemonName"></p>
+  <img src="https://placehold.jp/3697c7/ffffff/360x180.png?text=dummy" id="pokeImg">
+  <div class="balloon5">
+    <div class="faceicon">
+      <img src="./hakase.jpeg">
+    </div>
+    <div class="chatting">
+      <div class="says">
+        <p id="hakaseTxt">スタートを押すのじゃ</p>
+      </div>
+    </div>
+  </div>
+  <p><input type="text" value="" id="answerInput"></p>
+  <p><button id="answerBtn">答える</button></p>
+  <input type="hidden" value="" id="hiddenPokename">
+  <input type="hidden" value="" id="hiddenPokeJsonId">
+  <button type="button" id="classRemove">答え</button>
+<script type="module" src="./main.js"></script>
 </body>
 </html>
